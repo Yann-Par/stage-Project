@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>CSL Chauffage Sanitaire Longipontain</title>
+    <meta name="description" content="C.S.L. Chauffage Sanitaire Longipontain est une SARL spécialisé dans la vente, l'installation et la maintenance de chaudiere en tout genre. il opere sur la département de l'essonnes et est basé a longtpont sur orge." />
+        
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="public/css/style.css" type="text/css" />
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oxygen&display=swap" rel="stylesheet">
+    
+    
+</head>
+
+<body>
+    <header>
+        
+            <div >
+                <a href="index.php?route=home" ><img class="logo" src="./public/img/logo.png" alt="Logo CSL"/></a>
+            </div>
+            
+            <div class="nav">
+                <ul>
+                    <li><a href='index.php?route=plomberie'>Plomberie</a></li>
+                    <li><a href='index.php?route=chauffage'>Chauffage</a></li>
+                    <li><a href='index.php?route=gaz'>Gaz</a></li>
+                    <li><a href='index.php?route=contact'>Contact</a></li>                
+                </ul>
+            </div>
+            
+            <div id="burg" class="burg">
+                    <div id="mySideNav" class="sidenav">
+                        <a id="closeBtn" href="#" class="close">></a>
+                        <ul>
+                            <li><a href='index.php?route=plomberie'>Plomberie</a></li>
+                            <li><a href='index.php?route=chauffage'>Chauffage</a></li>
+                            <li><a href='index.php?route=gaz'>Gaz</a></li>
+                            <li><a href='index.php?route=contact'>Contact</a></li>
+                        </ul>
+                            
+                    </div>
+                    <div id="openBtn">
+                        <span class="burger-icon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </div>
+                </div>
+       
+    </header>
+    
+    <main>
+        
+        <?php include_once $view; ?>
+        
+    </main>
+    
+    
+    <footer>
+        <div class="plan_du_site">
+            <h4>Plan du site</h4>
+            <ul>
+                <li><a href='index.php?route=plomberie'>Plomberie</a></li>
+                <li><a href='index.php?route=chauffage'>Chauffage</a></li>
+                <li><a href='index.php?route=gaz'>Gaz</a></li>
+                <li><a href='index.php?route=contact'>Contact</a></li>
+            </ul>
+            
+        </div>
+        
+        
+        <div>
+            <h3>Infos</h3>
+            <ul>
+                <li><a href='index.php?route=home'>Accueil</a></li>
+                <li><a href='index.php?route=mentionLegales'>Mentions Légales</a></li>
+                <li><a href='index.php?route=PolitiqueDeConfidentialite'>Politique de confidentialité</a></li>
+                <li><a href='index.php?route=sources'>Sources de nos icones</a></li>
+            </ul>       
+        </div>
+        
+        
+        <div class="coordonnées">
+            <h3>Coordonnées</h3>
+            <ul>
+                <li>SARL CSL</li>
+                <li>Chauffage, Sanitaire Longipontain</li>
+                <li><a href="tel:+33169016148">01 69 01 61 48</a></li>
+                <li><a href='index.php?route=contact'>cs.logipontain@wanadoo.fr</a></li>
+                <li>91310, Longpont-sur-Orge</li>
+            </ul>
+        </div>
+    </footer>
+    
+    
+    <script  src="./public/js/navbar.js"></script>
+</body>
+

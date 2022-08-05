@@ -1,0 +1,69 @@
+<section class="contact">
+    
+    <h2>Une demande ? </br> Une question ?</h2>
+    <p>Ecrivez nous et nous vous répondrons !</p>
+    
+    <form action="index.php?route=sendMail" method="POST" class="contactForm">
+        <div class="zoneForm1">
+           <input type="text" name="lastname" placeholder="Nom"/>
+            <input type="text" name="firstname" placeholder="Prénom"/> 
+        </div>
+        <div class="zoneForm2">
+            <input type="text" name="mail" placeholder="E-mail"/>
+            <input type="text" name="phone" placeholder="N° de téléphone"/>
+        </div>
+         
+        <div class="zoneForm3">  
+        
+            <label>Objet de votre demande ?</label>
+            <select name="object">
+                <option value="Devis">Devis</option>
+                <option value="Plomberie">Plomberie</option>
+                <option value="Chauffage">Chauffage</option>
+                <option value="Gaz">Gaz</option>
+                <option value="SAV">SAV</option>
+                <option value="Entretien">Entretien</option>
+                <option value="Autre">Autre</option>
+            </select>
+            
+            <label>Que pouvons-nous faire pour vous ?</label>  
+            <textarea name="comment"></textarea>
+        </div>    
+        
+        <div class="zoneForm4"> 
+            
+        
+            <div><button type="submit"> Envoyez </button></div>
+            
+
+            <div class="msg_Contact">
+                <?php if( !empty($_SESSION['messageWin']) ) : ?>
+                    <p>
+                    <i class="fa-regular fa-circle-check win"></i>
+                        <span class="win">
+                            <?= $_SESSION['messageWin'] ; ?>
+                        </span>
+                    </p>
+                
+
+                <?php elseif( isset($_SESSION['messageLoose']) ) : ?>
+                    <p>
+                    <i class="fa-regular fa-circle-xmark nop"></i>
+                    <span class="nop">
+                            <?= $_SESSION['messageLoose'] ; ?>
+                        </span>
+                    </p>
+                
+
+                <?php elseif( isset($_SESSION['messageErr']) ) : ?>
+                    <p>
+                    <i class="fa-regular fa-circle-xmark nop"></i>
+                        <span class="nop">
+                            <?= $_SESSION['messageErr'] ; ?>
+                        </span>
+                    </p>
+                <?php endif; ?>
+            <div>
+        </div>
+    </form>
+</section>
