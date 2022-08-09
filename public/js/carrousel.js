@@ -35,8 +35,8 @@ document.addEventListener('DOMContentLoaded', function(){
     precedent.addEventListener('click', function() {
         etape-- ;
 
-        if(etape < O){
-            etape = 4;
+        if(etape < 0){
+            etape = nbr_img - 1;
         }
 
         enleverActiveImages();
@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function(){
     setInterval(function(){
         etape++;
 
-        if (etape >= nbr_img ) {
+        if (etape >= nbr_img) {
             etape = 0;
         }
         enleverActiveImages();
